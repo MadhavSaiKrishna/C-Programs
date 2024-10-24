@@ -1,27 +1,27 @@
 #include <stdio.h>
 int Digits(int);
-int Digits(int a)
+int Digits(int n)
 {
  int total=0;
- while (a>0)
+ while (n>0)
  {
-  total = total + a%10;
-  a = a/10;
+  total = total + n%10;
+  n = n/10;
  }
  return total;
 }
 void main()
 {
- int a;
+ int n;
  int sum=0;
  while(1)
  {
   printf("Enter a number:");
-  scanf("%d",&a);
-  if(a==0)
+  scanf("%d",&n);
+  if(n==0)
    break;
   else
-   sum = sum + Digits(a);
+   sum = sum + Digits(n);
  }
  printf("The sum is %d",sum);  
 }
