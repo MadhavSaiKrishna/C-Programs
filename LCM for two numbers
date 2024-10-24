@@ -1,17 +1,17 @@
 #include <stdio.h>
 void main()
 {
- int a,b,Greater,Size;
+ int a,b,Greater,size;
  printf("Enter value for two numbers:");
  scanf("%d%d",&a,&b);
  Greater=a>b?a:b;
- Size=Greater;
+ size=Greater;
  while(1)
  {
      if(Greater%a==0 && Greater%b==0)
       break;
      else
-      Greater+=Size;
+      Greater+=size;
  }
  printf("%d is the LCM",Greater);
 }
